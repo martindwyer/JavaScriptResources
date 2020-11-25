@@ -1,0 +1,115 @@
+// alert("This is annoying!)
+console.log("Javascript is workinig.")
+
+// Initialization Code
+var messageBox = document.getElementById("messageBox");
+messageBox.innerHTML="Press 'New Game' to begin";
+
+var numGuessesBox = document.getElementById("numGuesses");
+var numGuesses = 0;
+
+var rankBox = document.getElementById("rank");
+var rank = "Unknown";
+
+var secretNumber = 0;
+var gameInProgress = false;
+
+function newGame() {
+	// set up a new game
+	// first, is a game already running?
+	if( gameInProgress === true) {
+		var checkQuit = confirm("Quit current game?");
+		if (checkQuit===false) {
+		return;
+	  }   
+		rankBox.innerHTML = "Quitter";
+	}  
+	// Either game wasn't running, or checkQuit was true
+	// Set up a new game
+
+	// Get a number from 1 to 100   
+	secretNumber = Math.floor((Math.random() * 100) + 1);
+	console.log("secretNum =" + secretNumber);	 
+
+	// Reset guesses to 0
+	numGuesses = 0;
+	numGuessesBox.innerHTML = numGuesses;
+   console.log(numGuesses);
+	
+	// Reset message in Message Box
+	messageBox.innerHTML = "Enter your first guess!";
+   console.log(numGuesses);
+	 
+	// set gameInProgress to true
+	gameInProgress = true;
+	console.log(gameInProgress);
+	
+}
+
+function checkGuess() {
+    if (gameInProgress === false) {
+        alert("You need to start a game first!");
+        document.getElementById("guessBox").value="";
+        return;
+    }
+    var userGuess = document.getElementById("guessBox").value;
+    console.log("User Guessed: " + userGuess);
+ 
+    // type 1 missing input
+    if (userGuess == "") {
+        alert("You must enter a guess!");
+        return;
+    }
+
+    // type 2 input type mismatch wrong kind of number)
+    if( userGuess%1 != 0) {
+        alert("Enter only whole numbers!")
+        return;
+    }
+
+    // type 2: input type mismatch
+    if( isNaN(userGuess)==true) {
+        alert("You must enter a number!");
+        return;
+	 }
+
+    // type 3 input out of range
+    if( userGuess < 1 || userGuess > 100) {
+        alert("Your guess should be from 1 to 100!");
+        return;
+    }
+    
+    // if we got this far, the guess must be valid
+    numGuesses = numGuesses + 1;
+    numGuessesBox.innerHTML = numGuesses;
+    document.getElementById("guessBox").value = "";
+    
+   // Is this correct?
+	if (userGuess == secretNumber) {
+	     messageBox.innerHTML = "You win!!";
+	     gameInProgress = false;
+	     // code to rank the player
+	     if (numGuesses <= 3) {
+	         rankBox.innterHTML = "Genius!";
+	     }
+	     else if (numGuesses <= 5) {
+	         rankBox.innterHTML = "Good!";
+	         
+	     }
+	     else if (numGuesses <=10) {
+	         rankBox.innterHTML = "Average."
+	     }
+	     else if (numGuesses <= 15) {
+	         rankBox.innterHTML = "Fair";
+	     }
+	     else {
+	         rankBox.innterHTML = "Toddler";
+	     }    
+	} 
+	else if (userGuess > secretNumber) {
+	     messageBox.innterHTML = "Too high! Try again.";        
+	}
+	else {
+		  messageBox.innterHTML = "Too low! Try again.";
+	    }
+	}

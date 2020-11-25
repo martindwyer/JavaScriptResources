@@ -1,0 +1,36 @@
+body {
+    
+    background-color: tan;
+    font-family: Verdana, sans-serif;
+}
+
+#page {
+    margin: auto;
+    width: 470px;
+}
+
+#mallMap {
+    height: 630px;
+    width: 470px;
+    margin: auto;
+    background-image: url("../images/mallmap.jpg");
+    position: relative;
+}
+
+#mallMap a.dot {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/lightbar.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    position: absolute;
+}
+
+#mallMap a.dot:hover {
+    background-position: 0px -25px;
+}
+
+#mallMap a.dot.selected {
+    background-position: 0px -50px;
+}

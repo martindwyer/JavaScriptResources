@@ -1,0 +1,34 @@
+* {
+    margin: none;
+    padding: none;
+    font-family: sans-serif;
+    
+}
+
+body {
+    background-color: #aaa;
+       
+}
+
+#page {
+    margin: auto;
+    width: 800px;
+    background-color: ivory;
+    }
+
+.calendar th {
+    color: white;
+    background-color: black;
+    border: thin white solid;
+    padding: 0.5ex;
+    }
+
+.calendar td {
+    color: black;
+    background-color: white;
+    border: thin black solid;
+    text-align: left;
+    vertical-align: top;
+    padding: 1ex;
+    font-size: 9px;
+}

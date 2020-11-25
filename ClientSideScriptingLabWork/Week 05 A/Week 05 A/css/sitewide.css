@@ -1,0 +1,22 @@
+* {
+    margin: none;
+    padding: none;
+    font-family: sans-serif;
+    
+}
+
+body {
+    background-color: #aaa;
+       
+}
+
+#page {
+    margin: auto;
+    width: 800px;
+    background-color: ivory;
+    }
+
+.annoyingColors {
+    color: violet;
+    background-color: green;
+}

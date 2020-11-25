@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+    
+    <head>
+        <link href="css/sitewide.css" rel="stylesheet" />
+        <script src="js/jquery_v_3_2_1.js"></script>       
+        <script src="js/demo.js"></script>
+    </head>
+    
+    <body>
+        <div id="page">
+            
+            <h1 id="firstHeader">This is affected by an id property</h1>
+            
+            <h2 class="subHeads">This is affected by its class.</h2>
+            <h2 class="subHeads">This is affected by its class.</h2>
+            <h2 class="subHeads">This is affected by its class.</h2>
+            
+            <h3>This is affected by its element (tag)</h3>
+            <h3>This is affected by its element (tag)</h3>
+            <h3>This is affected by its element (tag)</h3>
+            <h3>This is affected by its element (tag)</h3>
+            <div id="tableSection">
+                <h4>Following table demonstrates filters</h4>
+                <p>
+                Odd-Even lines use the :odd and :even filters<br>
+                First line uses the :first filters<br>
+                The last line is affected using the :last filter<br>
+                The anchor tag in the middle of the table uses the :has() filter<br>
+                The cell containing "out" uses the :contains() filter<br>
+                </p>
+                <table>
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>    
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>    
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>    
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td><a href="#">item</a></td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>    
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>    
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>out</td>
+                        <td>item</td>
+                    </tr>    
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>    
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>    
+                </table>
+            </div>
+            <div id="advancedSelectors">
+                <h5>This is a descendant and a child</h5>
+                
+                <div>
+                
+                    <h5>This is a descendant but not a child</h5>
+                    <p>This is the first paragraph after an h5</p>
+                    <p>This is another paragraph</p>
+                    <p>This is another paragraph</p>
+                    <p>This is another paragraph</p>
+                    <p>This is another paragraph</p>
+                
+                </div>
+            
+            </div>
+        </div>
+        
+        
+    </body>

@@ -1,0 +1,48 @@
+* {
+    margin: none;
+    padding: none;
+    font-family: sans-serif;
+    
+}
+
+body {
+    background-color: #aaa;
+       
+}
+
+#page {
+    margin: auto;
+    width: 800px;
+    background-color: ivory;
+}
+
+#hilo {
+    width:400px;
+    margin: auto;
+}
+
+#hilo h1 {
+    
+    text-align: center;
+    
+}
+
+#hilo input {
+
+}
+
+#hilo div {
+    width: 250px;
+    margin: 18px auto;
+    padding: 10px;
+    background-color: white;
+    
+}
+
+#messageBox {
+    margin: 1ex;
+    border: thin green solid;
+    padding: 1em;
+    font-size: 16px;
+    text-align: center;
+}

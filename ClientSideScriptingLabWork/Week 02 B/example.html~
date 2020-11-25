@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+    
+    <head>
+        	<link href="css/sitewide.css" rel="stylesheet" />
+    		
+    </head>
+    
+    <body>
+        <div id="page">
+            <div id="hilo">
+        			 <br>
+                <h1>HI-Lo: <br>Guess the Secret Number (1=100)</h1>
+                <div>
+                <input type="button" onclick="newGame();" value="New Game" />
+                <p />
+                <input type="text" id="guessBox" />
+                <input type="submit" value="Submit" onclick="checkGuess();"/>
+                <label>Your Guess</label>
+                <p id="messageBox">&nbsp;</p>
+                Number of Guesses: <span id="numGuesses">0.0</span>
+                <p />
+                Rank: <span id="rank">Unknown</span>
+                <p />
+                <script src="js/demo.js"></script>
+            	</div>
+            </div>
+       	</div>
+        
+    </body>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+    
+    <head>
+        <link href="css/sitewide.css" rel="stylesheet" />
+           
+    
+    </head>
+    
+    <body onclick="runscript();">
+        <div id="page">
+            <h1>This is a test!</h1>
+            <p id="messageArea">&nbsp;</p>
+            <p class="messageSpaces">&nbsp;</p>
+            <p class="messageSpaces">&nbsp;</p>
+            
+            <script src="js/demo.js"></script>
+        </div>
+        
+        
+        
+    </body>

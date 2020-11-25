@@ -1,0 +1,44 @@
+* {
+    margin: none;
+    padding: none;
+    font-family: sans-serif;
+    
+}
+
+body {
+    background-color: #aaa;
+  
+       
+}
+
+#page {
+    margin: auto;
+    padding: 20px;
+    width: 800px;
+    background-color: ivory;
+    }
+
+.annoyingColors {
+    color: violet;
+    background-color: green;
+}
+
+#tableSection {
+    margin: 20px auto;
+    border: thin black solid;
+    padding: 1em;
+    width: 600px;
+}
+
+#tableSection td {
+    padding: 1ex;
+    border: thin black solid;
+}
+
+#advancedSelectors {
+    width: 400px;
+    border: thin black solid;
+    padding: 1em;
+    margin: 20px auto;
+    
+}

@@ -1,0 +1,59 @@
+body {
+    background-color: white;
+}
+
+div {
+    background-color: lightgrey;
+}
+
+#page {
+    margin: auto;
+    width: 940px;
+    background-color: gray;
+}
+
+.table {
+    display: table;
+}
+
+.tableRow {
+    display: table-row;
+}
+
+.tableCell {
+    display: table-cell;
+}
+
+#left {
+    width: 300px;
+}
+
+#right {
+    width: 640px;
+}
+
+#accordion {
+    width: 100%;
+
+}
+
+.section {
+    padding: .5em;
+    margin: .5em .5em;
+    border: thin brown solid;
+
+
+}
+
+.formTitle {
+    color: darkgreen;
+    margin-bottom: 1ex;
+    text-align: center;
+}
+
+#namechange {
+    height: 200px;
+}
+
+
+

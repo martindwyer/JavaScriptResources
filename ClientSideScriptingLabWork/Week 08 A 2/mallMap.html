@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Rollover Images</title>
+      <link href="css/mallMap.css" rel="stylesheet">
+      <script src="js/jquery-1.11.0.min.js"></script>
+      <script src="js/mallMap.js"></script>
+   </head>
+   <body>
+      <div id="page">
+         <h1>Try our interactive map!</h1>
+         <div id="mallMap">
+            <a class="dot" style="left: 330px; top: 233px;" cat="ds" store="store01"></a>
+            <a class="dot" style="left: 133px; top: 210px;" cat="ds" store="store02"></a>
+            <a class="dot" style="left: 155px; top: 236px;" cat="ds" store="store03"></a>
+            <a class="dot" style="left: 177px; top: 256px;" cat="ds" store="store04"></a>
+            <a class="dot" style="left: 199px; top: 278px;" cat="fc" store="store05"></a>
+            <a class="dot" style="left: 221px; top: 298px;" cat="fc" store="store06"></a>
+            <a class="dot" style="left: 192px; top: 170px;" cat="fc" store="store07"></a>
+            <a class="dot" style="left: 214px; top: 193px;" cat="ww" store="store08"></a>
+            <a class="dot" style="left: 135px; top: 158px;" cat="mw" store="store09"></a>
+            <a class="dot" style="left: 236px; top: 216px;" cat="ww" store="store10"></a>
+            <a class="dot" style="left: 258px; top: 240px;" cat="mw" store="store11"></a>
+            <a class="dot" style="left: 282px; top: 265px;" cat="ss" store="store12"></a>
+            <a class="dot" style="left: 154px; top: 430px;" cat="ss" store="store13"></a>
+            <a class="dot" style="left: 176px; top: 411px;" cat="ss" store="store14"></a>
+            <a class="dot" style="left: 199px; top: 391px;" cat="ss" store="store15"></a>
+            <a class="dot" style="left: 222px; top: 367px;" cat="tg" store="store16"></a>
+            <a class="dot" style="left: 247px; top: 345px;" cat="tg" store="store17"></a>
+            <a class="dot" style="left: 140px; top: 482px;" cat="tg" store="store18"></a>
+            <a class="dot" style="left: 196px; top: 477px;" cat="fc" store="store19"></a>
+            <a class="dot" style="left: 218px; top: 458px;" cat="fc" store="store20"></a>
+            <a class="dot" style="left: 244px; top: 425px;" cat="fc" store="store21"></a>
+            <a class="dot" style="left: 268px; top: 446px;" cat="ds" store="store22"></a>
+            <a class="dot" style="left: 292px; top: 471px;" cat="ds" store="store23"></a>
+            <a class="dot" style="left: 315px; top: 491px;" cat="tg" store="store24"></a>
+            <a class="dot" style="left: 336px; top: 511px;" cat="ss" store="store25"></a>
+            <a class="dot" style="left: 384px; top: 519px;" cat="ss" store="store26"></a>
+            <a class="dot" style="left: 381px; top: 469px;" cat="fc" store="store27"></a>
+            <a class="dot" style="left: 358px; top: 444px;" cat="fc" store="store28"></a>
+            <a class="dot" style="left: 337px; top: 426px;" cat="tg" store="store29"></a>
+            <a class="dot" style="left: 291px; top: 401px;" cat="tg" store="store30"></a>
+            <a class="dot" style="left: 297px; top: 371px;" cat="ss" store="store31"></a>
+            <a class="dot" style="left: 333px; top: 383px;" cat="ss" store="store32"></a>
+            <a class="dot" style="left: 363px; top: 372px;" cat="ww" store="store33"></a>
+            <a class="dot" style="left: 369px; top: 339px;" cat="ss" store="store34"></a>
+            <a class="dot" style="left: 364px; top: 309px;" cat="tg" store="store35"></a>
+            <a class="dot" style="left: 357px; top: 278px;" cat="ds" store="store36"></a>
+             
+            <!-- Category Selector -->
+             
+            <div id="storeChoice">
+                <form>
+                    <h5>Show Me:</h5>
+                        <select id="storeCategories">
+                            <option value="sa" selected="selected">Show All</option>
+                            <option value="ds">Department Stores</option>
+                            <option value="fc">Food Court</option>
+                            <option value="ww">Women's Wear</option>
+                            <option value="mw">Men's Wear</option>
+                            <option value="tg">Toys and Gifts</option>
+                            <option value="ss">Shoes Stores</option>
+                    </select>
+                
+                
+                </form> 
+             
+            </div>
+                
+            <!--Category Descriptions -->
+            <div id="sa" class="description">
+               <h4>Welcome to the Mall</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+             <div id="ds" class="description">
+               <h4>Department Stores</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+             <div id="fc" class="description">
+               <h4>Food Court</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+             <div id="ww" class="description">
+               <h4>Women's Wear</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+             <div id="mw" class="description">
+               <h4>Men's Wear</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+             <div id="tg" class="description">
+               <h4>Toys</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+             <div id="ss" class="description">
+               <h4>Shoes</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+             
+             
+             <!-- Store Description -->
+
+            <div id="store01" class="description">
+               <h4>I am store 01</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store02" class="description">
+               <h4>I am store 02</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store03" class="description">
+               <h4>I am store 03</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store04" class="description">
+               <h4>I am store 04</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store05" class="description">
+               <h4>I am store 05</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store06" class="description">
+               <h4>I am store 06</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store07" class="description">
+               <h4>I am store 07</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store08" class="description">
+               <h4>I am store 08</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store09" class="description">
+               <h4>I am store 09</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store10" class="description">
+               <h4>I am store 10</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store11" class="description">
+               <h4>I am store 11</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store12" class="description">
+               <h4>I am store 12</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store13" class="description">
+               <h4>I am store 13</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store14" class="description">
+               <h4>I am store 14</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store15" class="description">
+               <h4>I am store 15</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store16" class="description">
+               <h4>I am store 16</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store17" class="description">
+               <h4>I am store 17</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store18" class="description">
+               <h4>I am store 18</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store19" class="description">
+               <h4>I am store 19</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store20" class="description">
+               <h4>I am store 20</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store21" class="description">
+               <h4>I am store 21</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store22" class="description">
+               <h4>I am store 22</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store23" class="description">
+               <h4>I am store 23</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store24" class="description">
+               <h4>I am store 24</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store25" class="description">
+               <h4>I am store 25</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store26" class="description">
+               <h4>I am store 26</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store27" class="description">
+               <h4>I am store 27</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store28" class="description">
+               <h4>I am store 28</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store29" class="description">
+               <h4>I am store 29</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store30" class="description">
+               <h4>I am store 30</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store31" class="description">
+               <h4>I am store 31</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store32" class="description">
+               <h4>I am store 32</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store33" class="description">
+               <h4>I am store 33</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store34" class="description">
+               <h4>I am store 34</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store35" class="description">
+               <h4>I am store 35</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+            <div id="store36" class="description">
+               <h4>I am store 36</h4>
+               <img src="" width="100" height="75">
+               <p>This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. This is some text about store. </p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

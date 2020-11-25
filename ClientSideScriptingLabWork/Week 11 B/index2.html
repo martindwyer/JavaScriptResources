@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI Lab</title>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery-ui.structure.css" rel="stylesheet">
+    <link href="css/jquery-ui.theme.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <script src="js/jquery.min.js">
+
+
+    </script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/site.js"></script>
+
+</head>
+
+<body>
+    <div id="dialogComplete" title="saveTaxElections">
+        <h3>submit Tax Elections</h3>
+        <p>By submitting this form, you are agreeing to the withholding elections you have made.  C9ompany accepts no responsbility for your erros or ommissions.</p>
+    </div>
+    
+    <div id="dialogExempt" title="Claiming Exempt Status">
+        <h3>You are claiming to be tax exempt</h3>
+        <p>By submitting this form, you are agreeing to the withholding elections you have made.  C9ompany accepts no responsbility for your erros or ommissions.</p>
+    </div>
+    
+    
+    <div id="page" class="table">
+        <div class="tableRow">
+
+            <div id="left" class="tableCell">
+                <h3 class="formTitle">Please fill out all sections:</h3>
+                <div class="section">
+                    <h5>Tax Exempt</h5>
+                    <input name="fullRefund" class="exemptBox" type="checkbox" /><label>I was entitled</label><br>
+                    <input name="believeExempt" class="exemptBox" type="checkbox" /><label>I will be exempt this year</label><br>
+                    <input name="lowIncome" class="exemptBox" type="checkbox" /><label>My income is below $500</label><br>
+                </div>
+                <div class="section">
+                    <h5>Marital Status</h5>
+                    <input name="mstatus" type="radio" value="s" checked="checked" /><label>Single</label><br>
+                    <input name="mstatus" type="radio" value="m" /><label>Married</label><br>
+                    <input name="mstatus" type="radio" value="f" /><label>Filing Separately</label><br>
+
+                </div>
+
+                <div class="section">
+                    <h5>Allowances</h5>
+                    <input type="number" value="1" min="0" name="allowances"><br>
+                    <label>From the Worksheet instructions on the right</label><br>
+
+                </div>
+                <div class="section">
+                    <h5>Additional Amount</h5>
+                    <input type="number" value="1" min="0" name="addamount"><br>
+                    <label>Additional amount to withhold</label><br>
+
+                </div>
+
+                <div class="section" id="nameChange">
+                    <h5>Name Change</h5>
+                    <input class="namechange" type="checkbox" name="namechange" ><label>My name was changed last year</label><br>
+                    <div class="nameChanging">
+                    <input class="namechange" type-"text" name="oldname"><br> <label class="nameChanging">Previous Surname</label><br>
+                    </div>
+                </div>
+               
+                <div class="buttonDiv">
+                    <input type="button" id="submitForm" name="submitForm" value="Submit Form">
+                </div>
+
+            </div>
+
+            <div id="right" class="tableCell">
+                <h2 class="formTitle">Withholding Worksheet</h2>
+                <div id="accordion">
+                    <h3>W-4 Instructions</h3>
+                    <div id="instructions">
+                        <form action="">
+                            <fieldset>
+                                <legend>Personal information:</legend>
+                                First name:<br>
+                                <input type="text" name="firstname" value="Mickey">
+                                <br> Last name:<br>
+                                <input type="text" name="lastname" value="Mouse">
+                                <br><br>
+                                <input type="submit" value="Submit">
+                            </fieldset>
+                        </form>
+
+                    </div>
+                    <h3>Allowances</h3>
+                    <div id="instructions">instructions here...</div>
+                    <h3>Additional Amount</h3>
+                    <div id="instructions">instructions here...</div>
+                    <h3>Name Change</h3>
+                    <div id="instructions">instructions here...</div>
+                    <h3>Tax Exempt</h3>
+                    <div id="instructions">instructions here...</div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+    
+    
+
+</html>

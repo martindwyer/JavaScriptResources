@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI Lab</title>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery-ui.structure.css" rel="stylesheet">
+    <link href="css/jquery-ui.theme.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/site.js"></script>
+
+</head>
+
+<body>
+
+    <div id="page">
+
+        <div id="application">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-0">Personal</a></li>
+                    <li><a href="#tabs-1">Education</a></li>
+                    <li><a href="#tabs-2">Employment</a></li>
+                    <li><a href="#tabs-3">Military</a></li>
+                    <li><a href="#tabs-4">Confirm</a></li>
+                </ul>
+                <div id="tabs-0">
+                    <form id="personalForm">
+                        <div class="table">
+                            <div class="tableRow">
+                                <div class="tableCell">
+                                    <label>First Name</label>
+                                    <div><br>
+                                        <input name="firstName" id="firstName" type="text" title="First name required" required />
+                                    </div><br>
+                                </div>
+                            </div>
+                            <div class="tableRow">
+                                <div class="tableCell">
+                                    <label>Last Name</label>
+                                    <div><br>
+                                        <input name="lastName" id="lastName" type="text" title="Last name required" required />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <input type="button" value="submit" id="submitPersonalForm">
+
+                    </form>
+                </div>
+                <div id="tabs-1">
+                    <form id="educationForm">
+                        <div class="table">
+                            <div class="tableRow">
+                                <div class="tableCell">
+                                    <label>Education</label>
+                                    <div><br>
+                                        <input name="education" id="education" type="text" title="Name of High School" required />
+                                    </div><br>
+                                </div>
+                            </div>
+                            <div class="tableRow">
+                                <div class="tableCell">
+                                    <label>Home Town</label>
+                                    <div><br>
+                                        <input name="homeTown" id="homeTown" type="homeTown" title="Home Town required" required />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <input type="button" value="submit" id="submitEducationForm">
+
+                    </form>
+                </div>
+                <div id="tabs-2">
+                    <p>placeholder text</p>
+                </div>
+                <div id="tabs-3">
+                    <p>placeholder text</p>
+                </div>
+                <div id="tabs-4">
+                    <p>placeholder text</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

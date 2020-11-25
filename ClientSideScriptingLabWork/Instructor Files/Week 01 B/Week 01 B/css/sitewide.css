@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #aaa;
+}
+
+#poster {
+    background-color: white;
+    margin: auto;
+    padding:20px;
+        width: 800px;
+}
+
+#page {
+    margin: 0px;
+    padding: 0px;
+
+    background-color: white;
+    border: thin blue solid;
+    border-radius: 15px;
+}
+
+#guidelines {
+    padding-top: 30px;
+    font-size: 100px;
+    font-family: sans-serif;
+    font-weight: 700;
+    line-height: 100px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#guidelines img {
+    background-color: #eee;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#effective {
+    
+    background-color: #aaa;
+    padding: 1ex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    Color: white;
+    font-weight:600;
+    font-size: 32px;
+    text-align: right;
+    padding-right: 10px;
+}
+#printer {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+#printer img {
+    background-color: lime;
+    border: 2px solid blue;
+    border-radius: 100%;
+}
+
+#printer ul {
+    padding-left: 40px;
+    
+}
+
+#printer li {
+    font-size: 45px;
+    font-weight: 500;
+    color: blue;
+    line-height: 60px;
+    margin-top: 45px;
+    padding-right: 40px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+#footer {
+    margin: 30px;
+    border: thin blue solid;
+    border-radius: 30px;
+    height: 48px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 40px;
+}
+
