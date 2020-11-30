@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 const validator = require("validator");
+const keys = require("../config/keys");
 
-mongoose.connect("mongodb://127.0.0.1:27017/task-manager-api", {
+mongoose.connect(keys.mongoURL, {
   useNewUrlParser: true,
   useCreateIndex: true,
 });

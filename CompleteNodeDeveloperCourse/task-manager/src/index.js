@@ -1,11 +1,12 @@
 require("./db/mongoose");
 const express = require("express");
+const keys = require("./config/keys");
 
 const userRouter = require("./routers/UserRouter");
 const taskRouter = require("./routers/TaskRouter");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = keys.port;
 
 app.use(express.json());
 app.use(userRouter);
