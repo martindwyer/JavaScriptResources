@@ -1,26 +1,14 @@
-setTimeout(()=> {
-    console.log("2 seconds are up");
-}, 2000);
+const doWorkCallback = (callback) => {
+  setTimeout(() => {
+    //callback("This is my error!", undefined);
+    callback(undefined, [1, 4, 7]);
+  }, 2000);
+};
 
-const names = ['Martin','Rose','Kyle','Casey'];
+doWorkCallback((error, result) => {
+  if (error) {
+    return console.log(error);
+  }
 
-const shortNames = names.filter((name) => {
-    return name.length <= 4;
+  console.log(result);
 });
-
-const geocode = (adress,callback) => {
-    setTimeout(() => {
-        const data = {
-            latitude: 0,
-            longitude: 0
-        }
-    
-        callback(data);
-    }, 2000);
-    
-}
-
-geocode('Philadelphia', (data)=> {
-    console.log(data);
-});
-
