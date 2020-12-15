@@ -1,0 +1,76 @@
+.widget {
+  background-color: $light-blue;
+  margin-bottom: $xl-size;
+  padding-bottom: $l-size;
+}
+
+.widget-header {
+  background-color: $blue;
+  color: $off-white;
+  display: flex;
+  justify-content: space-between;
+  padding: $m-size;
+}
+
+.widget-message {
+  color: $off-white;
+  margin: 0;
+  padding: $l-size;
+  text-align: center;
+}
+
+.widget-option {
+  color: $off-white;
+  margin: 0;
+  padding: $l-size $m-size;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lighten($light-blue, 10%);
+}
+
+.widget-option p {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0;
+  word-break: break-all;
+}
+
+.widget-header-h3 {
+  margin: 0;
+}
+
+.new-action-form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: $l-size $m-size;
+}
+
+.new-action-form input {
+  flex-grow: 1;
+  background-color: $dark-blue;
+  border: transparent;
+  border-bottom: 0.3rem solid darken($dark-blue, 10%);
+  color: #ffffff;
+  font-size: $m-size;
+  padding: $s-size;
+}
+
+.error-message {
+  padding: 0 $m-size;
+  font-size: $m-size;
+  color: yellow;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .new-action-form {
+    flex-direction: row;
+  }
+
+  .new-action-form input {
+    margin: 0 $s-size 0 0;
+  }
+}
