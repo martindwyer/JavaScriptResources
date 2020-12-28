@@ -1,0 +1,237 @@
+function setUpBank (cid) {
+  let bank = {}
+  for (let curr of cid) {
+    bank[curr[0]] = curr[1]
+  }
+  return bank
+}
+
+function getCashAvailable (bank) {
+  let cashAvailable = 0
+  for (let curr in bank) {
+    cashAvailable += bank[curr]
+  }
+  return cashAvailable
+}
+
+function getHundreds (register) {
+  let numCurr = Math.floor(register.remainder / 100)
+  let valCurr = numCurr * 100
+  let changeNow = 0
+
+  if (numCurr > 0) {
+    if (valCurr <= register.bank['ONE HUNDRED']) {
+      changeNow = valCurr
+    } else {
+      changeNow = register.bank['ONE HUNDRED']
+    }
+    register.change.push(['ONE HUNDRED', changeNow])
+    register.remainder -= changeNow
+  }
+
+  return register
+}
+
+function getTwenties (register) {
+  let numCurr = Math.floor(register.remainder / 20)
+  let valCurr = numCurr * 20
+  let changeNow = 0
+
+  if (numCurr > 0) {
+    if (valCurr <= register.bank['TWENTY']) {
+      changeNow = valCurr
+    } else {
+      changeNow = register.bank['TWENTY']
+    }
+    register.change.push(['TWENTY', changeNow])
+    register.remainder -= changeNow
+  }
+
+  return register
+}
+
+function getTens (register) {
+  let numCurr = Math.floor(register.remainder / 10)
+  let valCurr = numCurr * 10
+  let changeNow = 0
+
+  if (numCurr > 0) {
+    if (valCurr <= register.bank['TEN']) {
+      changeNow = valCurr
+    } else {
+      changeNow = register.bank['TEN']
+    }
+    register.change.push(['TEN', changeNow])
+    register.remainder -= changeNow
+  }
+
+  return register
+}
+
+function getFives (register) {
+  let numCurr = Math.floor(register.remainder / 5)
+  let valCurr = numCurr * 5
+  let changeNow = 0
+
+  if (numCurr > 0) {
+    if (valCurr <= register.bank['FIVE']) {
+      changeNow = valCurr
+    } else {
+      changeNow = register.bank['FIVE']
+    }
+    register.change.push(['FIVE', changeNow])
+    register.remainder -= changeNow
+  }
+
+  return register
+}
+
+function getOnes (register) {
+  let numCurr = Math.floor(register.remainder)
+  let valCurr = numCurr
+  let changeNow = 0
+
+  if (numCurr > 0) {
+    if (valCurr <= register.bank['ONE']) {
+      changeNow = valCurr
+    } else {
+      changeNow = register.bank['ONE']
+    }
+    register.change.push(['ONE', changeNow])
+    register.remainder -= changeNow
+  }
+
+  return register
+}
+
+function getQuarters (register) {
+  let numCurr = Math.floor((register.remainder * 100) / 25)
+  let valCurr = numCurr * 0.25
+  let changeNow = 0
+
+  if (numCurr > 0) {
+    if (valCurr <= register.bank['QUARTER']) {
+      changeNow = valCurr
+    } else {
+      changeNow = register.bank['QUARTER']
+    }
+    register.change.push(['QUARTER', changeNow])
+    register.remainder -= changeNow
+  }
+
+  return register
+}
+
+function getDimes (register) {
+  let numCurr = Math.floor((register.remainder * 100) / 10)
+  let valCurr = numCurr * 0.1
+  let changeNow = 0
+
+  if (numCurr > 0) {
+    if (valCurr <= register.bank['DIME']) {
+      changeNow = valCurr
+    } else {
+      changeNow = register.bank['DIME']
+    }
+    register.change.push(['DIME', changeNow])
+    register.remainder -= changeNow
+  }
+
+  return register
+}
+
+function getNickels (register) {
+  let numCurr = Math.floor((register.remainder * 100) / 5)
+  let valCurr = numCurr * 0.05
+  let changeNow = 0
+
+  if (numCurr > 0) {
+    if (valCurr <= register.bank['NICKEL']) {
+      changeNow = valCurr
+    } else {
+      changeNow = register.bank['NICKEL']
+    }
+    register.change.push(['NICKEL', changeNow])
+    register.remainder -= changeNow
+  }
+
+  return register
+}
+
+function getPennies (register) {
+  let numCurr = Math.round(register.remainder * 100)
+  let valCurr = numCurr * 0.01
+  let changeNow = 0
+
+  if (numCurr > 0) {
+    if (valCurr <= register.bank['PENNY']) {
+      changeNow = valCurr
+    } else {
+      changeNow = register.bank['PENNY']
+    }
+    register.change.push(['PENNY', changeNow])
+    register.remainder -= changeNow
+  }
+
+  return register
+}
+
+function checkCashRegister (price, cash, cid) {
+  let bank = setUpBank(cid)
+  let cashAvailable = getCashAvailable(bank)
+  let changeRequest = cash - price
+  let register = {
+    status: '',
+    change: [],
+    remainder: 0,
+    bank
+  }
+
+  if (changeRequest > cashAvailable) {
+    register.status = 'INSUFFICIENT_FUNDS'
+    register.change = []
+  } else if (changeRequest === cashAvailable) {
+    register.status = 'CLOSED'
+    register.change = cid
+  } else {
+    register.status = 'OPEN'
+    register.remainder = changeRequest
+    register = getHundreds(register)
+    register = getTwenties(register)
+    register = getTens(register)
+    register = getFives(register)
+    register = getOnes(register)
+    register = getQuarters(register)
+    register = getDimes(register)
+    register = getNickels(register)
+    register = getPennies(register)
+    let changeCalc = 0
+
+    for (let curr of register.change) {
+      changeCalc += curr[1]
+    }
+    if (Math.abs(changeCalc - changeRequest) > 0.01) {
+      register.status = 'INSUFFICIENT_FUNDS'
+      register.change = []
+    }
+  }
+
+  return { status: register.status, change: register.change }
+}
+
+console.log(
+  checkCashRegister(3.26, 100, [
+    ['PENNY', 1.01],
+    ['NICKEL', 2.05],
+    ['DIME', 3.1],
+    ['QUARTER', 4.25],
+    ['ONE', 90],
+    ['FIVE', 55],
+    ['TEN', 20],
+    ['TWENTY', 60],
+    ['ONE HUNDRED', 100]
+  ])
+)
+
+
+//should return {status: "OPEN", change: [["TWENTY", 60], ["TEN", 20], ["FIVE", 15], ["ONE", 1], ["QUARTER", 0.5], ["DIME", 0.2], ["PENNY", 0.04]]}.

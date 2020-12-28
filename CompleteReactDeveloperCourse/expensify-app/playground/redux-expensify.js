@@ -183,7 +183,7 @@ const demoState = {
   }
 }
 
-// Add expense, remove expense, edit expense
+// Add expense, remove expense, edit e  xpense
 // Set text filter, sortby, start and end date
 
 store.subscribe(() => {

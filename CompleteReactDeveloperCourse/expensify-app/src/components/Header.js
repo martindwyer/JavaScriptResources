@@ -1,10 +1,10 @@
 import React from 'react'
-import { BrowserRouter, Link, Route, Switch, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
     <header>
-      <h1>Expensify</h1>
+      <h1>Expensify App</h1>
 
       <ul>
         <li>
@@ -15,11 +15,6 @@ const Header = () => {
         <li>
           <NavLink activeClassName='is-active' to='/create'>
             New
-          </NavLink>
-        </li>
-        <li>
-          <NavLink activeClassName='is-active' to='/edit/1'>
-            Edit
           </NavLink>
         </li>
         <li>
