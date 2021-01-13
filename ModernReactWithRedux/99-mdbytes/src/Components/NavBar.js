@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import logoImage from "../images/favicon_io/favicon-32x32.png";
 
 class NavBar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <NavLink className="navbar-brand" to="/">
-          <img src="images/favicon_io/favicon-32x32.png" />
+          <img src={logoImage} alt="logo image" />
         </NavLink>
 
         <button

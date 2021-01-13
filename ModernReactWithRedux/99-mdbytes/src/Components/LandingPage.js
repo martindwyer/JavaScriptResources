@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import nameImage from "../images/home/mdbytes-name.png";
 
 class LandingPage extends Component {
   render() {
@@ -9,9 +10,9 @@ class LandingPage extends Component {
         <div className="jumbotron">
           <div className="jumbo-message">
             <h1 className="display-4">
-              <img src="images/home/mdbytes-name.png" alt="mdbytes logo name" />
+              <img src={nameImage} alt="mdbytes logo name" />
             </h1>
-            <p className="lead">Adding value with technology</p>
+            <p className="lead">Building value with web applications</p>
 
             <NavLink className="btn btn-primary btn-lg" to="/services" role="button">
               Learn more

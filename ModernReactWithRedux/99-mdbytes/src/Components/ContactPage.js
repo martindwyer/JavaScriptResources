@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import locationMap from "./images/home/map.PNG";
 
 class ContactPage extends Component {
   render() {
@@ -27,7 +28,7 @@ class ContactPage extends Component {
                       href="https://www.google.com/maps/place/Czech+Village,+Cedar+Rapids,+IA/@41.9693471,-91.6730898,12.75z/data=!4m5!3m4!1s0x87e4f76a1694022d:0xf04f757e08d3a14c!8m2!3d41.9665611!4d-91.6608876"
                       target="_blank"
                     >
-                      <img src="images/home/map.PNG" />
+                      <img src={locationMap} />
                     </a>
                     <p>click on map for directions</p>
                   </div>

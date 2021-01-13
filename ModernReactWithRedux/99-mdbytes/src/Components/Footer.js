@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import martinPhoto from "../images/home/e6f200e2ad5534e920140a3980fb0746.png";
+import twitterLogo from "../images/icons/Twitter_Social_Icon_Rounded_Square_Color.png";
+import facebookLogo from "../images/icons/f_logo_RGB-Blue_72.png";
+import linkedinLogo from "../images/icons/LI-In-Bug.png";
 
 class Footer extends Component {
   render() {
@@ -11,13 +15,13 @@ class Footer extends Component {
               <div id="social-media">
                 <h5>Social Media</h5>
                 <a href="https://twitter.com/MDBytes" className="text-dark">
-                  <img className="social-icon" src="images/icons/Twitter_Social_Icon_Rounded_Square_Color.png" />
+                  <img className="social-icon" src={twitterLogo} alt="twitter logo" />
                 </a>
                 <a href="https://www.facebook.com/mdbytes" className="text-dark">
-                  <img className="social-icon" src="images/icons/f_logo_RGB-Blue_72.png" />
+                  <img className="social-icon" src={facebookLogo} alt="facebook logo" />
                 </a>
                 <a href="https://www.linkedin.com/in/mdbytes/" className="text-dark">
-                  <img className="social-icon" src="images/icons/LI-In-Bug.png" />
+                  <img className="social-icon" src={linkedinLogo} alt="linked in logo" />
                 </a>
               </div>
               <div id="copyright">
@@ -29,7 +33,9 @@ class Footer extends Component {
               </div>
             </div>
             <div className="col-6 col-md">
-              <h5>Services</h5>
+              <h5>
+                <NavLink to="/services">Services</NavLink>
+              </h5>
               <ul className="list-unstyled text-small">
                 <li>
                   <NavLink className="text-muted" to="/services">
@@ -65,7 +71,9 @@ class Footer extends Component {
               </ul>
             </div>
             <div className="col-6 col-md">
-              <h5>Portfolio</h5>
+              <h5>
+                <NavLink to="/portfolio">Portfolio</NavLink>
+              </h5>
               <ul className="list-unstyled text-small">
                 <li>
                   <NavLink className="text-muted" to="/portfolio">
@@ -94,17 +102,20 @@ class Footer extends Component {
                 </li>
                 <li></li>
                 <li>
-                  <a className="text-muted" href="#">
+                  <NavLink className="text-muted" to="/portfolio">
                     WordPress
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
             <div className="col-12 col-6 col-md">
-              <h5>About</h5>
+              <div id="footer-profile-photo">
+                <img src={martinPhoto} alt="photo of developer martin dwyer" height="130" />
+              </div>
               <p>
-                Commited to individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, responding to
-                change over following a plan.
+                Martin Dwyer
+                <br />
+                MD Bytes Founder and Developer
               </p>
             </div>
           </div>

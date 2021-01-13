@@ -1,5 +1,17 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import wireFrame from "../images/home/wireframe.jpeg";
+import office from "../images/home/office-1209640-350x234.jpg";
+import businessMeeting from "../images/home/business-meeting-1238188-1.jpeg";
+import iconOne from "../images/icons/globe.svg";
+import iconTwo from "../images/icons/sitemap.svg";
+import iconThree from "../images/icons/mobile-alt.svg";
+import iconFour from "../images/icons/wordpress.svg";
+import iconFive from "../images/icons/cash-register.svg";
+import iconSix from "../images/icons/thumbs-up.svg";
+import iconSeven from "../images/icons/lightbulb.svg";
+import featureOne from "../images/home/carousel/01-home-page-feedback-focus.jpeg";
+import featureTwo from "../images/home/carousel/gwcover-1536x868.jpeg";
 
 class ServicePage extends Component {
   render() {
@@ -29,7 +41,7 @@ class ServicePage extends Component {
 
             <div id="services">
               <div className="card service-card">
-                <img src="images/home/wireframe.jpeg" className="card-img-top" alt="..." />
+                <img src={wireFrame} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">Design</h5>
                   <p className="card-text">
@@ -38,7 +50,7 @@ class ServicePage extends Component {
                 </div>
               </div>
               <div className="card service-card">
-                <img src="images/home/office-1209640-350x234.jpg" className="card-img-top" alt="..." />
+                <img src={office} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">Development</h5>
                   <p className="card-text">
@@ -48,7 +60,7 @@ class ServicePage extends Component {
                 </div>
               </div>
               <div className="card service-card">
-                <img src="images/home/business-meeting-1238188-1.jpeg" className="card-img-top" alt="..." />
+                <img src={businessMeeting} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">Support</h5>
                   <p className="card-text">
@@ -62,32 +74,32 @@ class ServicePage extends Component {
             <div className="row servies-two">
               <div className="col-12" id="services-icons">
                 <figure className="service-icon">
-                  <img src="images/icons/globe.svg" height="75" />
+                  <img src={iconOne} height="75" alt="service img" />
                   <figcaption>Mobile-Ready Websites</figcaption>
                 </figure>
 
                 <figure className="service-icon">
-                  <img src="images/icons/sitemap.svg" height="75" />
+                  <img src={iconTwo} height="75" alt="service img" />
                   <figcaption>Integrated Business Applications</figcaption>
                 </figure>
                 <figure className="service-icon">
-                  <img src="images/icons/mobile-alt.svg" height="75" />
+                  <img src={iconThree} height="75" alt="service img" />
                   <figcaption>Mobile Applications</figcaption>
                 </figure>
                 <figure className="service-icon">
-                  <img src="images/icons/wordpress.svg" height="75" />
+                  <img src={iconFour} height="75" alt="service img" />
                   <figcaption>Blogs</figcaption>
                 </figure>
                 <figure className="service-icon">
-                  <img src="images/icons/cash-register.svg" height="75" />
+                  <img src={iconFive} height="75" alt="service img" />
                   <figcaption>e-Commerce Solutions</figcaption>
                 </figure>
                 <figure className="service-icon">
-                  <img src="images/icons/thumbs-up.svg" height="75" />
+                  <img src={iconSix} height="75" alt="service img" />
                   <figcaption>Social Media</figcaption>
                 </figure>
                 <figure className="service-icon">
-                  <img src="images/icons/lightbulb.svg" height="75" />
+                  <img src={iconSeven} height="75" alt="service img" />
                   <figcaption>Consultation</figcaption>
                 </figure>
               </div>
@@ -97,10 +109,10 @@ class ServicePage extends Component {
               <h5>Integrated business applications, websites, and more ...</h5>
               <div className="row">
                 <div className="col-12 col-md-6">
-                  <img src="images/home/carousel/01-home-page-feedback-focus.jpeg" />
+                  <img src={featureOne} alt="service img" />
                 </div>
                 <div className="col-12 col-md-6">
-                  <img src="images/home/carousel/gwcover-1536x868.jpeg" />
+                  <img src={featureTwo} alt="service img" />
                 </div>
               </div>
 

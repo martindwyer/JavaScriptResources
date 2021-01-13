@@ -9,7 +9,6 @@ const activePage = function () {
       $pageLinks[i].classList.remove("active");
     }
   }
-
   let $homeLink = document.querySelector("#home-link");
   let $servicesLink = document.querySelector("#services-link");
   let $portfolioLink = document.querySelector("#portfolio-link");

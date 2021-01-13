@@ -1,20 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route } from "react-router-dom";
-import "./index.css";
-import NavBar from "./Components/NavBar";
-import LandingPage from "./Components/LandingPage";
-import ServicePage from "./Components/ServicePage";
-import PortfolioPage from "./Components/PortfolioPage";
-import ContactPage from "./Components/ContactPage";
-import Footer from "./Components/Footer";
-import PrivacyPage from "./Components/PrivacyPage";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import NavBar from "./components/NavBar";
+import LandingPage from "./components/LandingPage";
+import ServicePage from "./components/ServicePage";
+import PortfolioPage from "./components/PortfolioPage";
+import ContactPage from "./components/ContactPage";
+import Footer from "./components/Footer";
+import PrivacyPage from "./components/PrivacyPage";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/main.css";
+
+import "jquery/dist/jquery";
+import "bootstrap/dist/js/bootstrap.bundle";
 
 import reportWebVitals from "./reportWebVitals";
+import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.render(
   <div>
-    <BrowserRouter>
+    <Router>
+      <ScrollToTop />
       <NavBar />
       <Route path="/" exact component={LandingPage} />
       <Route path="/index.html" component={LandingPage} />
@@ -23,7 +31,7 @@ ReactDOM.render(
       <Route path="/contact" component={ContactPage} />
       <Route path="/privacy" component={PrivacyPage} />
       <Footer path="/" />
-    </BrowserRouter>
+    </Router>
   </div>,
   document.getElementById("root")
 );

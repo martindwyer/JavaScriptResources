@@ -1,4 +1,20 @@
 import React, { Component } from "react";
+import slideOne from "../images/home/carousel/01-home-page-feedback-focus.jpeg";
+import slideTwo from "../images/home/carousel/price-monitoring-service-1536x855.jpeg";
+import slideThree from "../images/home/carousel/chat-app-1536x864.png";
+import slideFour from "../images/home/carousel/task-manager-api-home-page-1536x866.png";
+import slideSix from "../images/home/carousel/thebird-1536x865.png";
+import slideSeven from "../images/home/carousel/Careers-1536x864.jpeg";
+import slideEight from "../images/home/carousel/gwcover-1536x868.jpeg";
+import slideNine from "../images/home/carousel/pscover-1536x866.jpeg";
+import iconOne from "../images/icons/html5.svg";
+import iconTwo from "../images/icons/css3-alt.svg";
+import iconThree from "../images/icons/js-square.svg";
+import iconFour from "../images/icons/bootstrap.svg";
+import iconFive from "../images/icons/react.svg";
+import iconSix from "../images/icons/node.svg";
+import iconSeven from "../images/icons/wordpress.svg";
+import iconEight from "../images/icons/python.svg";
 
 class PortfolioPage extends Component {
   render() {
@@ -35,7 +51,7 @@ class PortfolioPage extends Component {
             <div id="portfolio-carousel" className="carousel slide" data-interval="false" data-ride="carousel">
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img className="d-block w-100" src="images/home/carousel/01-home-page-feedback-focus.jpeg" alt="Third slide" />
+                  <img className="d-block w-100" src={slideOne} alt="Third slide" />
                   <div className="carousel-caption d-none d-block">
                     <h5>Feedback Focus</h5>
                     <p>
@@ -53,7 +69,7 @@ class PortfolioPage extends Component {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img className="d-block w-100" src="images/home/carousel/price-monitoring-service-1536x855.jpeg" alt="First slide" />
+                  <img className="d-block w-100" src={slideTwo} alt="First slide" />
                   <div className="carousel-caption d-none d-block">
                     <h5>Price Monitor Service</h5>
                     <p>
@@ -71,7 +87,7 @@ class PortfolioPage extends Component {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img className="d-block w-100" src="images/home/carousel/chat-app-1536x864.png" alt="First slide" />
+                  <img className="d-block w-100" src={slideThree} alt="First slide" />
                   <div className="carousel-caption d-none d-block">
                     <h5>Chat App</h5>
                     <p>
@@ -87,7 +103,7 @@ class PortfolioPage extends Component {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img className="d-block w-100" src="images/home/carousel/task-manager-api-home-page-1536x866.png" alt="First slide" />
+                  <img className="d-block w-100" src={slideFour} alt="First slide" />
                   <div className="carousel-caption d-none d-block">
                     <h5>Task Manager API</h5>
                     <p>
@@ -98,7 +114,7 @@ class PortfolioPage extends Component {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img className="d-block w-100" src="images/home/carousel/thebird-1536x865.png" alt="First slide" />
+                  <img className="d-block w-100" src={slideSix} alt="First slide" />
                   <div className="carousel-caption d-none d-block">
                     <h5>The Bird</h5>
                     <p>
@@ -114,7 +130,7 @@ class PortfolioPage extends Component {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img className="d-block w-100" src="images/home/carousel/Careers-1536x864.jpeg" alt="First slide" />
+                  <img className="d-block w-100" src={slideSeven} alt="First slide" />
                   <div className="carousel-caption d-none d-block">
                     <h5>Careers</h5>
                     <p>
@@ -126,7 +142,7 @@ class PortfolioPage extends Component {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img className="d-block w-100" src="images/home/carousel/gwcover-1536x868.jpeg" alt="First slide" />
+                  <img className="d-block w-100" src={slideEight} alt="First slide" />
                   <div className="carousel-caption d-none d-block">
                     <h5>Wild Things Nature Photography</h5>
                     <p>
@@ -140,7 +156,7 @@ class PortfolioPage extends Component {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img className="d-block w-100" src="images/home/carousel/pscover-1536x866.jpeg" alt="Second slide" />
+                  <img className="d-block w-100" src={slideNine} alt="Second slide" />
                   <div className="carousel-caption d-none d-block">
                     <h5>Primal Strength Fitness and Training</h5>
                     <p>
@@ -164,35 +180,35 @@ class PortfolioPage extends Component {
           <hr />
           <div className="portfolio-icons">
             <figure className="portfolio-icon">
-              <img src="images/icons/html5.svg" height="75" />
+              <img src={iconOne} height="75" />
               <figcaption>Html 5</figcaption>
             </figure>
             <figure className="portfolio-icon">
-              <img src="images/icons/css3-alt.svg" height="75" />
+              <img src={iconTwo} height="75" />
               <figcaption>CSS 3</figcaption>
             </figure>
             <figure className="portfolio-icon">
-              <img src="images/icons/js-square.svg" height="75" />
+              <img src={iconThree} height="75" />
               <figcaption>JavaScript</figcaption>
             </figure>
             <figure className="portfolio-icon">
-              <img src="images/icons/bootstrap.svg" height="75" />
+              <img src={iconFour} height="75" />
               <figcaption>Bootstrap</figcaption>
             </figure>
             <figure className="portfolio-icon">
-              <img src="images/icons/react.svg" height="75" />
+              <img src={iconFive} height="75" />
               <figcaption>React</figcaption>
             </figure>
             <figure className="portfolio-icon">
-              <img src="images/icons/node.svg" height="75" />
+              <img src={iconSix} height="75" />
               <figcaption>Node.js</figcaption>
             </figure>
             <figure className="portfolio-icon">
-              <img src="images/icons/wordpress.svg" height="75" />
+              <img src={iconSeven} height="75" />
               <figcaption>WordPress</figcaption>
             </figure>
             <figure className="portfolio-icon">
-              <img src="images/icons/python.svg" height="75" />
+              <img src={iconEight} height="75" />
               <figcaption>Python</figcaption>
             </figure>
           </div>
