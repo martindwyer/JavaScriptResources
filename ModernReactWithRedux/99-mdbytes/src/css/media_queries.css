@@ -28,7 +28,7 @@
     margin: 1em auto;
   }
 
-  #root > div > div:nth-child(2) > div.portfolio-container > div:nth-child(2) > div > p {
+  .overview p {
     column-count: 2;
   }
 
