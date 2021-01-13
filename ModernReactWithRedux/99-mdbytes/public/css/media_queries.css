@@ -1,0 +1,76 @@
+/* Small devices (landscape phones, 576px and down) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  #services {
+    display: flex;
+  }
+  .card {
+    flex: 33%;
+    width: auto;
+    border: none;
+    margin-left: 1em;
+    background-color: #f2f2f2;
+  }
+
+  .jumbo-message p {
+    display: block;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .service-icon img {
+    display: block;
+    height: 50px;
+    margin: 1em auto;
+  }
+
+  #root > div > div:nth-child(2) > div.portfolio-container > div:nth-child(2) > div > p {
+    column-count: 2;
+  }
+
+  .jumbo-message {
+    width: 50%;
+  }
+
+  #carousel-container {
+    display: flex;
+    width: 100%;
+    padding: 3em 0 12em 0;
+    margin-bottom: 10em;
+    background-color: #f2f2f2;
+  }
+
+  .carousel-button-holder {
+    flex: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-button-holder i {
+    color: #ff6a00;
+  }
+
+  #portfolio-carousel {
+    flex: 70%;
+    max-width: 1200px;
+    padding: 2px;
+    border-radius: 12px;
+    margin: 0 auto;
+    box-shadow: -60px -5px 30px 30px rgba(136, 136, 136, 0.5);
+  }
+
+  #portfolio-directions {
+    display: block;
+    width: auto;
+    margin-left: 300px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

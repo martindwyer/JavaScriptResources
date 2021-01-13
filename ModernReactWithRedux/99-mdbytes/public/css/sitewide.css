@@ -1,0 +1,120 @@
+body:after {
+  content: "";
+  position: fixed; /* stretch a fixed position to the whole screen */
+  top: 0;
+  height: 100vh; /* fix for mobile browser address bar appearing disappearing */
+  left: 0;
+  right: 0;
+  z-index: -1; /* needed to keep in the background */
+  background: url("../images/home/cropped-laptop-2838921-scaled-2.jpg") top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+.container-fluid {
+  max-width: 1400px;
+  padding: 0px 25px;
+  margin: 0 auto;
+}
+
+.site-header {
+  width: 100vw;
+  height: 50vh;
+  background: none;
+  position: relative;
+  top: 10vh;
+  text-align: center;
+  color: #ffffff;
+}
+
+.site-header h2 {
+  font-size: 400%;
+  font-weight: 600;
+}
+
+.site-header p {
+  display: block;
+  font-weight: 550;
+  font-size: 1.1em;
+}
+
+#page-indicator {
+  display: none;
+}
+
+.overview {
+  margin: 0px 0px;
+  padding: 25px 0px;
+}
+
+.overview h3 {
+  font-weight: 700;
+}
+
+.logo-style {
+  font-family: "MuseoModerno", cursive;
+  font-size: 1.5em;
+  font-weight: 1000;
+  letter-spacing: -0.1em;
+  color: #ff6a00;
+}
+
+.name-style {
+  font-family: "MuseoModerno", cursive;
+  font-size: 1.25em;
+  color: #818181;
+  letter-spacing: -0.05em;
+}
+
+.name-style-white {
+  font-family: "MuseoModerno", cursive;
+  font-size: 1.25em;
+  color: #ffffff;
+  letter-spacing: -0.05em;
+}
+
+a {
+  color: #ff6a00;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ff6a00;
+  font-size: 110%;
+}
+
+.btn-primary {
+  background-color: #ff6a00;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: grey !important;
+}
+
+#footer {
+  display: block;
+  margin-top: -10px !important;
+  margin-bottom: 0px !important;
+  padding-bottom: 75px;
+  width: 100vw;
+  background-color: #f2f2f2;
+}
+
+.social-icon {
+  height: 3em;
+  margin-right: 1.5em;
+}
+
+#social-media {
+  margin-bottom: 2em;
+}

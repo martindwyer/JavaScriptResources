@@ -1,0 +1,20 @@
+.privacy-main {
+  width: 100vw;
+  min-height: 80vh;
+  padding-top: 2em;
+  padding-bottom: 4em;
+  background-color: #f2f2f2;
+}
+
+.privacy-main p {
+  font-size: 1.15em;
+}
+
+#privacy-content {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+li::marker {
+  font-size: 1.5em;
+}
