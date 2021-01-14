@@ -10,3 +10,16 @@
 // isValidPassword('89Fjj1nms', 'dogLuvr');  //true
 // isValidPassword('dogLuvr123!', 'dogLuvr') //false
 // isValidPassword('hello1', 'dogLuvr') //false
+
+
+const isValid(password, username) {
+    if(password.indexOf(username) > -1) {
+        return false
+    } else if (password.indexOf(" ") > -1) {
+        return false
+    } else if (password.length <= 8) {
+        return false
+    } else {
+        return true
+    }
+}
